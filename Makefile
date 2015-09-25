@@ -15,7 +15,7 @@ LEX      = lex
 
 install : lexanalysis.lex
 	$(LEX) lexanalysis.lex
-	$(CC) lex.yy.c -o babycpp -ll
+	$(CC) lex.yy.c -o cpp -ll
 
 clean :
-	rm -f *.c *.out *.am babycpp
+	rm -f *.c *.out *.am cpp
